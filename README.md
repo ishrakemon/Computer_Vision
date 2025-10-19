@@ -1,27 +1,31 @@
 # Computer Vision Projects
 
+A collection of **computer vision applications** built using **Python**, **OpenCV**, and **MediaPipe**.  
+These projects explore real-time image processing, hand tracking, and gesture-based interaction systems.
+
+---
+
 ## Hand Tracking
-This project uses **MediaPipe** and **OpenCV** to perform real-time **hand landmark detection** using your webcam.  
-It identifies **21 key points** on each hand and visualizes them along with connection lines.
+This project implements **real-time hand landmark detection** using **MediaPipe** and **OpenCV**.  
+It identifies **21 unique landmarks** on each detected hand and overlays visual connections on the live camera feed.
 
 ### Features
-- Real-time hand landmark detection  
-- Visual overlay of hand skeleton  
-- FPS (frames per second) display  
-- Works with any standard webcam  
+- Real-time hand detection and tracking  
+- Visual rendering of hand landmarks and connections  
+- FPS (frames per second) counter for performance monitoring  
+- Compatible with any standard webcam  
 
 ---
 
 ## Hand Tracking Module
-This project defines a reusable **`handDetector` class** that detects and tracks hands in real time using **MediaPipe** and **OpenCV**.  
-It identifies 21 hand landmarks, draws them on the video feed, and provides their pixel coordinates for further computer vision tasks.
+A modular implementation that defines a reusable **`handDetector` class** for detecting and tracking hands.  
+This class provides landmark coordinates for use in downstream computer vision tasks, such as gesture recognition and hand-controlled interfaces.
 
-### Features
-- Modular **`handDetector` class** for reuse in future projects  
-- Detects up to two hands simultaneously  
-- Provides precise landmark coordinates  
-- Real-time FPS display  
-- Easily extendable for gesture recognition or hand-based control systems  
+### Key Highlights
+- Reusable **object-oriented structure**  
+- Supports detection of up to two hands simultaneously  
+- Provides pixel coordinates for all 21 hand landmarks  
+- Easily extendable for gesture or motion-based control systems  
 
 ---
 
@@ -29,11 +33,3 @@ It identifies 21 hand landmarks, draws them on the video feed, and provides thei
 - [Python 3.x](https://www.python.org/)
 - [OpenCV](https://opencv.org/)
 - [MediaPipe](https://developers.google.com/mediapipe)
-
----
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/computer-vision.git
-   cd computer-vision
